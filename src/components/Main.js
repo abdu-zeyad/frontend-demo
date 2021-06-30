@@ -14,7 +14,7 @@ export class Main extends Component {
               <Home />
             </Route>
 
-            <Route exact path="/form">
+            <Route path="/form">
               <Form />
             </Route>
           </Switch>
