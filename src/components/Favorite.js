@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-export class Form extends Component {
+export class Favorite extends Component {
   render() {
     return <div>form</div>;
   }
 }
 
-export default Form;
+export default Favorite;
