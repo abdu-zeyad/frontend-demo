@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export class Favorite extends Component {
   render() {
-    return <div>form</div>;
+    return <div>this is fav</div>;
   }
 }
 

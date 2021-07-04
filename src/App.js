@@ -1,17 +1,14 @@
 import React, { Component } from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Favorite from "./components/Favorite";
+import Header from "./components/Header";
 import Home from "./components/Home";
-
+import Favorite from "./components/Favorite";
 export class App extends Component {
   render() {
     return (
       <div>
         <Router>
           <Header />
-
           <Switch>
             <Route exact path="/">
               <Home />
@@ -20,7 +17,6 @@ export class App extends Component {
               <Favorite />
             </Route>
           </Switch>
-          <Footer />
         </Router>
       </div>
     );
