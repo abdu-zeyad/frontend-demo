@@ -11,7 +11,7 @@ export class Home extends Component {
     };
   }
   componentDidMount = async () => {
-    const server = "http://localhost:3001";
+    const server = "https://demo-backend222.herokuapp.com";
     const allData = await axios.get(`${server}/all`);
     this.setState({
       data: allData.data,
@@ -19,7 +19,7 @@ export class Home extends Component {
     console.log(this.state.data);
   };
   addFav = async (idx) => {
-    const server = "http://localhost:3001";
+    const server = "https://demo-backend222.herokuapp.com";
     const obj = {
       name: this.state.data[idx].name,
       avg_price: this.state.data[idx].avg_price,

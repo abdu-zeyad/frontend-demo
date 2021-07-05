@@ -16,7 +16,7 @@ export class Favorite extends Component {
     };
   }
   componentDidMount = async () => {
-    const server = "http://localhost:3001";
+    const server = "https://demo-backend222.herokuapp.com";
     const favData = await axios.get(`${server}/getFav`);
     console.log(favData.data);
     this.setState({
@@ -26,7 +26,7 @@ export class Favorite extends Component {
   };
   Delete = async (id) => {
     console.log(id);
-    const server = "http://localhost:3001";
+    const server = "https://demo-backend222.herokuapp.com";
     const newArray = await axios.delete(`${server}/delete?id=${id}`);
     this.setState({
       favArr: newArray.data,
@@ -53,7 +53,7 @@ export class Favorite extends Component {
       avg_price: e.target.avg_price.value,
       id: this.state.favArr[this.state.index]["_id"],
     };
-    const server = "http://localhost:3001";
+    const server = "https://demo-backend222.herokuapp.com";
 
     const NewDataa = await axios.put(`${server}/update`, obj);
     this.setState({
