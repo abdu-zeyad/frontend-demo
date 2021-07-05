@@ -24,7 +24,8 @@ export class Home extends Component {
       name: this.state.data[idx].name,
       avg_price: this.state.data[idx].avg_price,
     };
-    await axios.post(`${server}/addtofav`);
+    await axios.post(`${server}/addToFav`, obj);
+    // console.log(obj);
   };
   render() {
     return (
